@@ -1,7 +1,7 @@
 <header class="wave-background">
   <mat-toolbar class="mat-toolbar-home">
     <img src="../assets/logo.svg" alt="">
-    <button class="button-stroked">Entrar</button>
+    <button class="button-stroked" [routerLink]="['/login']">Entrar</button>
   </mat-toolbar>
   <div class="wrapper-main-header">
     <div class="wrapper-header-left">
@@ -80,7 +80,7 @@
   <div class="wave-final-background"></div>
 </section>
 <div class="wrapper-final-button">
-  <button class="final-button">
+  <button class="final-button" [routerLink]="['/registrar']" >
     <span>TESTAR PLATAFORMA</span> 
     <div>
       <mat-icon class="icon-final-button" >east</mat-icon>

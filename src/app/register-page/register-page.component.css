@@ -20,7 +20,7 @@
 .card{
   background-color: #F1F1F1;
   width: 550px;
-  height: 660px;
+  height: 720px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +47,7 @@
   align-items: center;
   justify-content: space-around;
   border-radius: 6px;
+  margin-bottom: 30px;
   text-decoration:none;
   color:#000
 }
@@ -66,7 +67,7 @@ input{
 }
 
 .wrapper_input{
-  height: 400px;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -77,7 +78,7 @@ input{
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .button-login{

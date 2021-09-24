@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login-page',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private authServie: AuthService
+  ) { }
 
-  ngOnInit(): void {
+    ngOnInit (): void {
+     
+  }
+
+  async oiii(){
+    const respose = await this.authServie.googleAuth()
+    console.log(respose)
   }
 
 }

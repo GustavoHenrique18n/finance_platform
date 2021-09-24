@@ -7,12 +7,14 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './share/material/material.module';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    RegisterPageComponent
   ],
   imports: [
     BrowserModule,
