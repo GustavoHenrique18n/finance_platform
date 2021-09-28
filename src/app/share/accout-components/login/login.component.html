@@ -1,0 +1,41 @@
+<div class="wrapper_content" *ngIf="!isReplacePassword;else replaceComponent">
+  <a class="card-btn" href="http://localhost:8080/oauth2/authorization/google" target="_blank"  >
+    <div>
+      <img src="../assets/google-logo.svg" class="logo-google">
+    </div>
+    Continuar com o google 
+  </a>
+
+  <div class="wrapper_input" *ngIf="!isRegisterComponent;else registerComponent">
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Senha">
+    <div class="wrapper-button-text">
+      <a mat-button target="_blank" (click)="changeComponentPassword()">Esqueceu a senha ?</a>
+      <a mat-button (click)="changeComponentRegister()">Não tem uma conta ?</a>
+    </div>
+  </div>
+  <button mat-flat-button class="button-login">Entrar</button>
+
+  <ng-template #registerComponent>
+    <div class="wrapper_input-register">
+      <input type="text" placeholder="Nome">
+      <input type="text" placeholder="Email">
+      <input type="password" placeholder="Senha">
+      <input type="password" placeholder="Confirmar Senha">
+      <div class="wrapper-button-text">
+        <a mat-button (click)="changeComponentLogin()">Ja tem uma conta?</a>
+      </div>
+    </div>
+
+  </ng-template>
+</div>
+
+<ng-template #replaceComponent>
+  <div class="wrapper_input-register">
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Senha">
+    <input type="password" placeholder="Confirma senha">
+    <a mat-button (click)="changeComponentLogin()">Ja tem uma conta?</a>
+    <button mat-flat-button class="button-login">redefinir</button>
+  </div>
+</ng-template>

@@ -1,0 +1,20 @@
+<div class="main-content-background">
+  <header>
+    <mat-toolbar class="mat-toolbar-otherpages">
+      <img src="../assets/logo.svg">
+    </mat-toolbar>
+  </header>
+  <section class="main-content">
+    <div class="main-text"> 
+      <span *ngIf="!isPasswordComponent;else passwordText"> {{ isRegisterComponent ? 'Organize sua carteira com nosso sistema' : 'Seja bem vindo em nossa plataforma'}}</span>
+      <ng-template #passwordText>
+        <span>Recuperar senha</span>
+      </ng-template>
+    </div>
+    <div>    
+      <mat-card class="card mat-elevation-z0" >
+        <app-login class="component" (register)="isRegister($event)" (password)="isPassword($event)" ></app-login>
+      </mat-card>
+    </div>
+  </section>
+</div>
