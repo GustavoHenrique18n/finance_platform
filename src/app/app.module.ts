@@ -7,20 +7,20 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './share/material/material.module';
 import { LoginPageComponent } from './login-page/login-page.component';
-import { RegisterPageComponent } from './register-page/register-page.component';
+import { AccoutModule } from './share/accout-components/accout/accout.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     LoginPageComponent,
-    RegisterPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AccoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
