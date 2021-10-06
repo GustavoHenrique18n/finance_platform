@@ -1,0 +1,92 @@
+<section class="wrapper-all-route-content">
+  <div class="wrapper-top-content">
+    <div class="content">
+      <div class="wrapper-icon">
+        <mat-icon class="icon-settings" mat-button [matMenuTriggerFor]="menu">settings</mat-icon>
+      </div>
+      <div class="avatar-content">
+        <div class="avatar">
+          <mat-icon class="icon-avatar">person</mat-icon>
+        </div>
+        <div class="wrapper-name">
+          <span class="user-name">Gustavo Henrique do Espirito Santo</span> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-money-section">
+    <div class="amount-container">
+      <div class="money-container-all">
+        <mat-icon color="#63C302" class="money_icon_green">attach_money</mat-icon>
+        <div class="wrapper-descripion">
+          <div class="description-content">
+            <span class="name-description">Receita</span>
+            <span class="values">0,00</span>
+          </div>
+        </div>
+      </div>
+      <div class="money-container-receive">
+        <mat-icon color="#63C302" class="money_icon_green">attach_money</mat-icon>
+        <div class="wrapper-descripion">
+          <div class="description-content">
+            <span class="name-description">Recebido</span>
+            <span class="values">0,00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="amount-container">
+      <div class="money-container-all">
+        <mat-icon color="#63C302" class="money_icon_red">attach_money</mat-icon>
+        <div class="wrapper-descripion">
+          <div class="description-content">
+            <span class="name-description">Despesas</span>
+            <span class="values">0,00</span>
+          </div>
+        </div>
+      </div>
+      <div class="money-container-receive">
+        <mat-icon color="#63C302" class="money_icon_red">attach_money</mat-icon>
+        <div class="wrapper-descripion">
+          <div class="description-content">
+            <span class="name-description">Pago</span>
+            <span class="values">0,00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-money-section">
+    <div class="rest-container">
+      <div class="money-container-all">
+        <mat-icon color="#63C302" class="money_icon_green">attach_money</mat-icon>
+        <div class="wrapper-descripion">
+          <div class="description-content">
+            <span class="name-description">Restante a receber</span>
+            <span class="values">0,00</span>
+          </div>
+        </div>
+      </div>
+      <div class="money-container-all rest-pay-container">
+        <mat-icon color="#63C302" class="money_icon_red">attach_money</mat-icon>
+        <div class="wrapper-descripion">
+          <div class="description-content">
+            <span class="name-description">Restante a pagar</span>
+            <span class="values">0,00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="myInfo()">
+    <mat-icon>library_books</mat-icon>
+   <span class="font-medium-xs">Minhas informações</span> 
+  </button>
+  <button mat-menu-item [routerLink]="['/account']" >
+    <mat-icon class="attention">arrow_back_ios</mat-icon>
+    <span class="font-medium-xs attention">Fazer logout</span>
+  </button>
+</mat-menu>

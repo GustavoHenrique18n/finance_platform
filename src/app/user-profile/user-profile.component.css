@@ -1,0 +1,114 @@
+
+.wrapper-top-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.avatar-content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-avatar{
+  color: white;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.attention{
+  color: #E87A7A;
+}
+.wrapper-icon{
+  text-align: end;
+  width: 100%;
+}
+
+.user-name{
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.icon-settings{
+  font-size: 40px;
+}
+.wrapper-money-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.amount-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+.rest-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+.money-container-all{
+  width: 437px;
+  height: 157px;
+  border: 3px solid #000000;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+	border-radius: 6px;
+}
+.rest-pay-container{
+  margin-top: 50px;
+}
+.description-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper-descripion{
+  width: 100%;
+}
+.money-container-receive{
+  width: 437px;
+  height: 122px;
+  border: 3px solid #000000;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+	border-radius: 6px;
+}
+.name-description{
+  font-size: 24px;
+}
+
+.values {
+	font-size: 24px;
+	font-weight:500;
+}
+
+.money_icon_red{
+	font-size:55px;
+	color: #F02F2F;
+	display:flex;
+	align-items:center;
+}
+.money_icon_green{
+	font-size:55px;
+	color: #63C302;
+	display:flex;
+	align-items:center;
+}
+

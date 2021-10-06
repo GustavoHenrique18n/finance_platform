@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,20 +8,29 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './share/material/material.module';
 import { LoginPageComponent } from './login-page/login-page.component';
-import { AccoutModule } from './share/accout-components/accout/accout.module';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { MyInfoModalComponent } from './share/modals/my-info-modal/my-info-modal.component';
+import { AmountAccountsComponent } from './amount-accounts/amount-accounts.component';
+import { ExpenseAccountComponent } from './expense-account/expense-account.component';
+import { ComponentsModule } from './share/components.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     LoginPageComponent,
+    UserProfileComponent,
+    MyInfoModalComponent,
+    AmountAccountsComponent,
+    ExpenseAccountComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
     MaterialModule,
-    AccoutModule
+    ComponentsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

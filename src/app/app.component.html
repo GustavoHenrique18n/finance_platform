@@ -1,1 +1,108 @@
-<router-outlet></router-outlet>
+<section  *ngIf="isLoggedLogin;else isNotLoggedUser">
+  <mat-drawer-container class="side-container" autosize>
+    <mat-drawer  class="sidenav" [opened]='t'  *ngIf="t;else miniSideNav" mode="side">
+      <div class="content-sidenav">
+        <div class="wrapper-side-content">
+          <div>
+            <img src="../assets/logo-blank.svg">
+          </div>
+          <div class="btn-sidenav">
+            <div class="wrapper-btn-link">
+              <button class="option-sidenav">
+                <mat-icon class="icon">show_chart</mat-icon>
+                <span class="name-option">Visão geral</span>
+              </button>
+            </div>
+            <div class="wrapper-btn-link">
+              <button class="option-sidenav" [routerLink]="['/contasareceber']" routerLinkActive="active-button" >
+                <mat-icon class="icon">attach_money</mat-icon>
+                <span class="name-option">Contas a receber</span>
+              </button>
+            </div>
+            <div class="wrapper-btn-link">
+              <button class="option-sidenav" [routerLink]="['/contasapagar']" routerLinkActive="active-button">
+                <mat-icon class="icon">money</mat-icon>
+                <span class="name-option">Contas a pagar</span>
+              </button>
+            </div>
+            <div class="wrapper-btn-link">
+              <button class="option-sidenav">
+                <mat-icon class="icon">print</mat-icon>
+                <span class="name-option">Relátorios</span>
+              </button>
+            </div>
+          </div>
+          <div class="footer-sidenav">
+            <div>
+              <div class="avatar" [routerLink]="['/perfil']"></div>
+            </div>
+            <div>
+              <mat-icon class="icon"  (click)="t = !t">arrow_back_ios</mat-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div class="wrapper-header">
+        <mat-toolbar class="mat-toolbar">
+          <mat-icon class="icon">notifications</mat-icon>
+        </mat-toolbar>
+      </div> 
+      <router-outlet ></router-outlet>
+    </mat-drawer-content>
+    <ng-template #miniSideNav>
+      <mat-drawer  class="sidenav-mini" mode="side"  [opened]='!t'>
+        <div class="content-sidenav">
+          <div class="wrapper-side-content">
+            <div>
+              <img src="../assets/logo-blank.svg">
+            </div>
+            <div class="btn-sidenav">
+              <div class="wrapper-btn-link">
+                <button class="option-sidenav-mini" >
+                  <div class="wrapper-icon">
+                    <mat-icon class="icon">show_chart</mat-icon>
+                  </div>
+                </button>
+              </div>
+              <div class="wrapper-btn-link">
+                <button class="option-sidenav-mini" [routerLink]="['/contasareceber']" routerLinkActive="active-button">
+                  <div class="wrapper-icon">
+                    <mat-icon class="icon">attach_money</mat-icon>
+                  </div>
+                </button>
+              </div>
+              <div class="wrapper-btn-link">
+                <button class="option-sidenav-mini" [routerLink]="['/contasapagar']" routerLinkActive="active-button">
+                  <div class="wrapper-icon">
+                    <mat-icon class="icon">money</mat-icon>
+                  </div>
+                </button>
+              </div>
+              <div class="wrapper-btn-link">
+                <button class="option-sidenav-mini">
+                  <div class="wrapper-icon">
+                    <mat-icon class="icon">print</mat-icon>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="footer-sidenav">
+              <div>
+                <div class="avatar"></div>
+              </div>
+              <div>
+                <mat-icon class="icon"  (click)="t = !t">arrow_forward_ios</mat-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-drawer>
+    </ng-template>
+  </mat-drawer-container>
+</section>
+
+<ng-template #isNotLoggedUser >
+  <router-outlet ></router-outlet>
+</ng-template>

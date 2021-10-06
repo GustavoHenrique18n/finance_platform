@@ -5,7 +5,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input'; 
-import {MatRippleModule} from '@angular/material/core'; 
+import { MatRippleModule } from '@angular/material/core';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatRadioModule} from '@angular/material/radio'; 
+import {MatSelectModule} from '@angular/material/select';
+import {MatTooltipModule} from '@angular/material/tooltip';  
 
 @NgModule({
   declarations: [],
@@ -16,7 +22,13 @@ import {MatRippleModule} from '@angular/material/core';
     MatFormFieldModule,
     MatCardModule,
     MatInputModule,
-    MatRippleModule
+    MatRippleModule,
+    MatSidenavModule,
+    MatMenuModule,
+    MatDialogModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatTooltipModule
   ],
   exports: [
     MatIconModule,
@@ -25,7 +37,13 @@ import {MatRippleModule} from '@angular/material/core';
     MatFormFieldModule,
     MatCardModule,
     MatInputModule,
-    MatRippleModule
+    MatRippleModule,
+    MatSidenavModule,
+    MatMenuModule,
+    MatDialogModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatTooltipModule
  ]
 })
 export class MaterialModule { }

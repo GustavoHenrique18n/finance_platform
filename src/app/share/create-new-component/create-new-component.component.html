@@ -1,0 +1,116 @@
+<div *ngIf="amountPage;else expensePage">
+  <div class="content-top">
+    <span class="font-bold-xl">Contas a Receber</span>
+    <mat-icon class="icon-plus" (click)="isClickedAmount = !isClickedAmount">{{ isClickedAmount ? 'close' : 'add'}}</mat-icon>
+  </div>
+  <div class="wrapper-form" *ngIf="isClickedAmount">
+    <mat-form-field appearance="outline" class="new-wrapper-form">
+      <mat-label>Conta a receber</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <div class="minor-content">
+      <div class="wrapper-content-form-field">
+        <mat-form-field appearance="outline" class="new-wrapper-form form-select">
+          <mat-label>Data do valor a receber</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <app-tooltip-date></app-tooltip-date>
+      </div>
+      <mat-form-field appearance="outline" class="new-wrapper-form">
+        <mat-label>Valor da conta</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-radio-group aria-label="Select an option" [(ngModel)]="buttonSelected" class="radioButton">
+        <mat-radio-button value="Recebido" class="firstButton">Recebido</mat-radio-button>
+        <mat-radio-button value="Não recebido">Não recebido</mat-radio-button>
+      </mat-radio-group>      
+      <div class="wrapper-selected-form" *ngIf="buttonSelected === 'Recebido'">
+        <div class="wrapper-content-form-field">
+          <mat-form-field appearance="outline" class="new-wrapper-form">
+            <mat-label>Data do recebimento</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <app-tooltip-date></app-tooltip-date>
+        </div>
+        <mat-form-field appearance="outline" class="new-wrapper-form">
+          <mat-label>Valor recebido</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="wrapper-content-select-field">
+      <mat-form-field appearance="outline" class="form-select new-wrapper-form">
+        <mat-label>Categoria</mat-label>
+        <mat-select >
+          <mat-option value="volvo">Algum valor</mat-option>
+          <mat-option value="volvo">Algum valor</mat-option>
+          <mat-option value="volvo">Algum valor</mat-option>
+          <mat-option value="volvo">Algum valor</mat-option>
+          <mat-option value="volvo">Algum valor</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-icon class="icon-select">add</mat-icon>
+    </div>
+    <div>
+      <button mat-flat-button class="basic-color">Criar nova conta</button>
+    </div>
+  </div>
+</div>
+<ng-template #expensePage>
+  <div class="content-top">
+    <span class="font-bold-xl">Contas a Pagar</span>
+    <mat-icon class="icon-plus" (click)="isClickedExpense = !isClickedExpense">{{ isClickedExpense ? 'close' : 'add'}}</mat-icon>
+  </div>
+  <div class="wrapper-form" *ngIf="isClickedExpense">
+    <mat-form-field appearance="outline" class="new-wrapper-form">
+      <mat-label>Conta a pagar</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <div class="minor-content">
+      <div class="wrapper-content-form-field">
+        <mat-form-field appearance="outline" class="new-wrapper-form form-select">
+          <mat-label>Data do valor a pagar</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <app-tooltip-date></app-tooltip-date>
+      </div>
+      <mat-form-field appearance="outline" class="new-wrapper-form">
+        <mat-label>Valor da conta</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-radio-group aria-label="Select an option" [(ngModel)]="buttonSelected" class="radioButton">
+        <mat-radio-button value="Recebido" class="firstButton">pago</mat-radio-button>
+        <mat-radio-button value="Não recebido">Não pago</mat-radio-button>
+      </mat-radio-group>      
+      <div class="wrapper-selected-form" *ngIf="buttonSelected === 'Recebido'">
+        <div class="wrapper-content-form-field">
+          <mat-form-field appearance="outline" class="new-wrapper-form">
+            <mat-label>Data do pagamento</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <app-tooltip-date></app-tooltip-date>
+        </div>
+        <mat-form-field appearance="outline" class="new-wrapper-form">
+          <mat-label>Valor pago</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="wrapper-content-select-field">
+      <mat-form-field appearance="outline" class="form-select new-wrapper-form">
+        <mat-label>Categoria</mat-label>
+        <mat-select >
+          <mat-option value="volvo">Algum valor despesa</mat-option>
+          <mat-option value="volvo">Algum valor despesa</mat-option>
+          <mat-option value="volvo">Algum valor despesa</mat-option>
+          <mat-option value="volvo">Algum valor despesa</mat-option>
+          <mat-option value="volvo">Algum valor despesa</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-icon class="icon-select">add</mat-icon>
+    </div>
+    <div>
+      <button mat-flat-button class="basic-color">Criar nova conta</button>
+    </div>
+  </div>
+</ng-template>

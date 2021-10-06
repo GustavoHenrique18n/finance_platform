@@ -1,0 +1,131 @@
+
+.wrapper-header{
+	min-height:70px;
+  max-width:100vw;
+}
+.wrapper-btn-link{
+  width: 100%;
+  height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-icon{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-right: 20px;
+}
+.side-container{
+  height: 100vh;
+  max-width: 100vw;
+	position:relative;
+}
+.option-sidenav.active-button{
+  background-color: #FFFFFF29;
+  height: 100%;
+  border-radius: 20px;
+}
+.option-sidenav-mini.active-button{
+  background-color: #FFFFFF29;
+  height: 100%;
+  border-radius: 20px;
+}
+.sidenav{
+  background: #292961;
+  min-width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+	position:fixed;
+}
+.mat-toolbar{
+  background: #292961;
+  max-width:100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 50px;
+}
+.content-sidenav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0px 40px;
+}
+.wrapper-side-content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px 0px;
+}
+.btn-sidenav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: 65%;
+} 
+.footer-sidenav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.icon {
+  color: #D1D1F0;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  text-align: end;
+}
+.sidenav-mini {
+  background: #292961;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.option-sidenav{
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.option-sidenav-mini{
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+}
+
+.name-option{
+  color: #D1D1F0;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: start;
+  width: 70%;
+}

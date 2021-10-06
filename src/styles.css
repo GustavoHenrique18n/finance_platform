@@ -18,3 +18,70 @@ body { margin: 0; font-family: 'Montserrat', sans-serif; }
   background-color: transparent;
   padding: 0px 100px;
 }
+.font-regular-xs {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+}
+.font-regular-g {
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+}
+
+.font-medium-xs {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+.font-medium-g {
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+}
+.font-bold {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.font-bold-xl {
+  font-size: 48px;
+  font-weight: 400;
+  color: black;
+}
+
+.wrapper-all-route-content {
+  padding: 70px 70px;
+}
+
+.firstButton{
+  margin-bottom: 20px;
+}
+.mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{
+  background-color: black !important;
+}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+  border-color: black !important;
+}
+
+.radioButton {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+.basic-color {
+  background: #292961;
+  color: #fff;
+}
+.new-wrapper-form {
+  padding: 20px 0px 20px 0px
+}
+.mat-form-field-wrapper{
+  padding-bottom: 0 !important;
+}
+
+.err {
+  background-color: red;
+}

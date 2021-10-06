@@ -1,0 +1,49 @@
+.content-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-plus{
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+}
+.icon-select{
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+}
+.wrapper-form{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.minor-content{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.wrapper-selected-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.wrapper-content-select-field{
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.form-select{
+  width: 100%  ;
+}
+
+.wrapper-content-form-field{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
