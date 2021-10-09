@@ -5,12 +5,14 @@ import { CreateNewComponentComponent } from './create-new-component/create-new-c
 import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
 import { TooltipDateComponent } from './tooltip-date/tooltip-date.component';
+import { HistoryCardComponent } from './history-card/history-card.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
     CreateNewComponentComponent,
     TooltipDateComponent,
+    HistoryCardComponent,
   ],
   imports: [
     CommonModule,
@@ -21,6 +23,7 @@ import { TooltipDateComponent } from './tooltip-date/tooltip-date.component';
     LoginComponent,
     CreateNewComponentComponent,
     TooltipDateComponent,
+    HistoryCardComponent
   ]
 })
 export class ComponentsModule { }

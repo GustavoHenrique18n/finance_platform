@@ -1,0 +1,38 @@
+<section class="wrapper-all-route-content">
+  <div>
+    <span class="font-bold-xl">Relatórios</span>
+  </div>
+  <app-history-card></app-history-card>
+
+  <div class="generate">
+    <span class="font-bold-xl">Gerar novo relatorio</span>
+  </div>
+
+  <div class="wrapper-form">
+    <mat-form-field appearance="outline" class="new-wrapper-form">
+      <mat-label>Nome do relatorio</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <div class="minor-content">
+      <div class="wrapper-content-form-field">
+        <mat-form-field appearance="outline" class="new-wrapper-form form-select">
+          <mat-label>Data inico</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <app-tooltip-date></app-tooltip-date>
+      </div>
+      <div class="wrapper-content-form-field">
+        <mat-form-field appearance="outline" class="new-wrapper-form form-select">
+          <mat-label>Data final</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <app-tooltip-date></app-tooltip-date>
+      </div>
+    </div>
+    <div class="check-session">
+      <mat-checkbox class="check">adicionar minhas receitas</mat-checkbox>
+      <mat-checkbox class="check">adicionar minhas despesas</mat-checkbox>
+    </div>
+    <button mat-button color="primary" class="btn-generate">Gerar relatório</button>
+  </div>
+</section>

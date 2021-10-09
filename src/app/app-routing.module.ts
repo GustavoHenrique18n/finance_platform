@@ -4,6 +4,7 @@ import { AmountAccountsComponent } from './amount-accounts/amount-accounts.compo
 import { ExpenseAccountComponent } from './expense-account/expense-account.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { ReportPageComponent } from './report-page/report-page.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'perfil', component: UserProfileComponent},
   {path:'contasareceber', component: AmountAccountsComponent},
   {path:'contasapagar', component: ExpenseAccountComponent},
+  {path:'relatorios', component: ReportPageComponent},
 ];
 
 @NgModule({

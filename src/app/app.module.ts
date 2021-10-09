@@ -13,6 +13,7 @@ import { MyInfoModalComponent } from './share/modals/my-info-modal/my-info-modal
 import { AmountAccountsComponent } from './amount-accounts/amount-accounts.component';
 import { ExpenseAccountComponent } from './expense-account/expense-account.component';
 import { ComponentsModule } from './share/components.module';
+import { ReportPageComponent } from './report-page/report-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ComponentsModule } from './share/components.module';
     MyInfoModalComponent,
     AmountAccountsComponent,
     ExpenseAccountComponent,
+    ReportPageComponent,
   ],
   imports: [
     BrowserModule,

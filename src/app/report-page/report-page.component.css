@@ -1,0 +1,30 @@
+.generate{
+  padding: 40px 0px;
+}
+.check-session{
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-form{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.minor-content{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.form-select{
+  width: 70%  ;
+}
+.check{
+  padding: 10px 0px;
+}
+
+.btn-generate{
+  display: flex;
+  width: 20%;
+  margin-top: 20px;
+}
