@@ -9,6 +9,7 @@ export class MyInfoModalComponent implements OnInit {
 
   constructor() { }
 
+	
   ngOnInit(): void {
   }
 

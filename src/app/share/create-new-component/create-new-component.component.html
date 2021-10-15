@@ -49,7 +49,7 @@
           <mat-option value="volvo">Algum valor</mat-option>
         </mat-select>
       </mat-form-field>
-      <mat-icon class="icon-select">add</mat-icon>
+			<mat-icon class="icon-select" (click)='addNewCategorie()' >add</mat-icon>
     </div>
     <div>
       <button mat-flat-button class="basic-color">Criar nova conta</button>
@@ -108,11 +108,11 @@
           <mat-option value="volvo">Algum valor despesa</mat-option>
         </mat-select>
       </mat-form-field>
-      <mat-icon class="icon-select">add</mat-icon>
+			<mat-icon class="icon-select" (click)='addNewCategorie()'>add</mat-icon>
     </div>
     <div>
       <button mat-flat-button class="basic-color">Criar nova conta</button>
     </div>
   </div>
-  <app-history-card></app-history-card>
+	<app-history-card></app-history-card>
 </ng-template>

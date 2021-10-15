@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {AuthService} from 'src/app/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,13 @@ export class LoginComponent implements OnInit {
   isRegisterComponent = false
   isReplacePassword = false
   
-  constructor() { }
+	authCredentials = {
+		email: '',
+		password: ''
+	}
+  constructor(
+		private authService: AuthService
+	) { }
 
   ngOnInit(): void {
   }
@@ -33,4 +40,11 @@ export class LoginComponent implements OnInit {
     this.isReplacePassword = true
     this.password.emit(this.isReplacePassword)
   }
+	auth (){
+		const formData = new FormData()
+		formData.append('username', this.authCredentials.email)
+		formData.append('password', this.authCredentials.password)
+
+		this.authService.formAuth(formData) 
+	}
 }

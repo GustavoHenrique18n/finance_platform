@@ -7,14 +7,14 @@
   </a>
 
   <div class="wrapper_input" *ngIf="!isRegisterComponent;else registerComponent">
-    <input type="text" placeholder="Email">
-    <input type="password" placeholder="Senha">
+    <input type="text" placeholder="Email"  [(ngModel)]='authCredentials.email' >
+    <input type="password" placeholder="Senha" [(ngModel)]='authCredentials.password'>
     <div class="wrapper-button-text">
       <a mat-button target="_blank" (click)="changeComponentPassword()">Esqueceu a senha ?</a>
       <a mat-button (click)="changeComponentRegister()">Não tem uma conta ?</a>
     </div>
   </div>
-  <button mat-flat-button class="button-login">Entrar</button>
+  <button mat-flat-button class="button-login" (click)= 'auth()'>Entrar</button>
 
   <ng-template #registerComponent>
     <div class="wrapper_input-register">

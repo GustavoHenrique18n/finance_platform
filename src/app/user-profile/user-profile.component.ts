@@ -18,7 +18,7 @@ export class UserProfileComponent implements OnInit {
   myInfo () {
     this.dialog.open(MyInfoModalComponent , {
       width: '577px',
-      height: '349px',
+      height: '200px',
     })
   }
 }

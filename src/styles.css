@@ -85,3 +85,8 @@ body { margin: 0; font-family: 'Montserrat', sans-serif; }
 .err {
   background-color: red;
 }
+.icon-modal{
+	display: flex;
+	align-items: center;
+	font-size:30px;
+}

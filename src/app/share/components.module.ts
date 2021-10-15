@@ -6,13 +6,17 @@ import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
 import { TooltipDateComponent } from './tooltip-date/tooltip-date.component';
 import { HistoryCardComponent } from './history-card/history-card.component';
+import { CreateCategorieComponent } from './modals/create-categorie/create-categorie.component';
+import {MyInfoModalComponent} from './modals/my-info-modal/my-info-modal.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
-    CreateNewComponentComponent,
+		CreateNewComponentComponent,
     TooltipDateComponent,
     HistoryCardComponent,
+    CreateCategorieComponent,
+		MyInfoModalComponent,
   ],
   imports: [
     CommonModule,

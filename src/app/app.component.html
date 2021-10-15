@@ -1,4 +1,4 @@
-<section  *ngIf="isLoggedLogin;else isNotLoggedUser">
+<main  *ngIf="(isLogged$ | async ); else isNotLoggedUser">
   <mat-drawer-container class="side-container" autosize>
     <mat-drawer  class="sidenav" [opened]='t'  *ngIf="t;else miniSideNav" mode="side">
       <div class="content-sidenav">
@@ -101,8 +101,9 @@
       </mat-drawer>
     </ng-template>
   </mat-drawer-container>
-</section>
-
+</main>
 <ng-template #isNotLoggedUser >
   <router-outlet ></router-outlet>
 </ng-template>
+	
+

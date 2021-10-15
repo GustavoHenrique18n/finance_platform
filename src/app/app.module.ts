@@ -9,11 +9,13 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './share/material/material.module';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { MyInfoModalComponent } from './share/modals/my-info-modal/my-info-modal.component';
 import { AmountAccountsComponent } from './amount-accounts/amount-accounts.component';
 import { ExpenseAccountComponent } from './expense-account/expense-account.component';
 import { ComponentsModule } from './share/components.module';
 import { ReportPageComponent } from './report-page/report-page.component';
+import {StoreModule} from '@ngrx/store';
+import {isLoggedUser} from './state/reducers/auth-reducer';
+import {AuthGuardGuard} from './guards/auth-guard.guard';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,6 @@ import { ReportPageComponent } from './report-page/report-page.component';
     HomePageComponent,
     LoginPageComponent,
     UserProfileComponent,
-    MyInfoModalComponent,
     AmountAccountsComponent,
     ExpenseAccountComponent,
     ReportPageComponent,
@@ -32,9 +33,12 @@ import { ReportPageComponent } from './report-page/report-page.component';
     NoopAnimationsModule,
     MaterialModule,
     ComponentsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+	  StoreModule.forRoot({
+      auth: isLoggedUser,
+    })
   ],
-  providers: [],
+  providers: [AuthGuardGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

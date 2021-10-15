@@ -1,0 +1,21 @@
+.modal-content {
+	height:100%;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.wrapper-categories{
+	display: flex;
+	align-items:center;
+}
+
+.icon-close{
+	display:flex;
+	align-items: center;
+}
+.form{
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
